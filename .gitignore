@@ -1,0 +1,11 @@
+/public/hot
+/public/storage
+public/vendor/dcat-admin-extensions
+/storage/*.key
+/vendor
+/dcat-admin-extensions
+install.lock
+.env
+.user.ini
+.htaccess
+.DS_Store
