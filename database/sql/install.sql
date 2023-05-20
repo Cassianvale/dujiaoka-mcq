@@ -282,7 +282,7 @@ CREATE TABLE `admin_users` (
 BEGIN;
 INSERT INTO `admin_users` VALUES (1, 'admin', '$2y$10$e7z99Mhxm9BOHL55xHZTx.QcNTZJC6ftRXHCR/ZkBja/jBeasVeBy', 'Administrator', NULL, '4UAXF2BEw9EL1Tr2aGmwkv5DKwxqRF6djOMAHSiBMSOrPfPNHYrjCCQMtnTC', now(), now());
 INSERT INTO `admin_users` VALUES (2, 'demo', '$2y$10$FEc/DRk.ZRhqYoZyYmbgQ.LP1Vf0jn5NtUtFXRh4KzQN0hC5CLbSS', 'Demo', NULL, NULL, now(), now());
-
+COMMIT;
 
 -- ----------------------------
 -- Table structure for carmis
