@@ -15,15 +15,14 @@
 这是一份基于[独角数卡](https://github.com/assimon/dujiaoka)在[dc53741](https://github.com/assimon/dujiaoka/commit/dc53741e275007b8c81c43319ee657ef011bad93)基础上修改的版本。此版本在部分功能上与原版有所修改，故请以本仓库的Wiki/Issues得到的反馈为准。
 
 以下是目前比较明显的更改：
-- 修复了部分较严重的bug
-- 修复易支付回调
-- Dash订单&金额统计改为当天、本周、当月、今年
+- 修复了部分较严重的bug，修复易支付回调
+- 后台主页订单&金额统计改为当天、本周、当月、今年
 - 更新框架至Laravel9
 - 必须运行在PHP8.0.2及以上
 - 补充插件表结构
 - Unicorn模板支持深色模式，优化样式，显示销量，显示缺货，支持极验验证
 - 新增支付宝WAP支付，微信小程序支付[（开发参考）](https://github.com/outtimes/dujiaoka/wiki/微信小程序支付开发说明)
-- 优先全站HTTPS
+- 优先全站HTTPS，修复前台静态资源更新
 - 支持手动补单
 - 新增优惠券管理(优惠券支持系数优惠/固定金额优惠/每件商品固定金额优惠)
 - 支付通道费率设置
@@ -32,7 +31,7 @@
 - 新增下单限制，订单过期时间/限制同一IP同时存在待支付的订单数量
 - 新增卡密自选功能
 - 国内访问前进行人机验证
-- 优化权限显示，修复权限路由，仅需要勾选[角色]中的[权限]
+- 优化权限显示，修复权限路由
 
 
 ## 环境要求
@@ -86,16 +85,19 @@
 
 ## :open_mouth:快速预览
 【后端页面预览】
-![后端](https://chat-aixpro.hkg.bcebos.com/shop/vx_20230518000149.png)
-
-【官方`Unicorn`模板首页】
-![首页](https://files.mdnice.com/user/39773/7669cf85-4e93-4572-a1b8-f11170c50b90.png)
-
-【`hyper`模板】  
-![](https://files.mdnice.com/user/39773/5f649d68-a1ce-4911-accb-2b7467e8fa4f.png)
+![后端](public\assets\common\images\chrome_screenshot_1.png)
+![路由](public\assets\common\images\chrome_screenshot_2.png)
 
 【`luna`模板】 
-![](https://files.mdnice.com/user/39773/10ffe97d-fb17-4f69-bb4e-e82f9befdc3d.png)
+![luna](public\assets\common\images\chrome_screenshot_3.png)
+![luna](public\assets\common\images\chrome_screenshot_4.png)
+
+【`hyper`模板】  
+![hyper](public\assets\common\images\chrome_screenshot-luna.png)
+
+【官方`Unicorn`模板首页】
+![unicorn](public\assets\common\images\chrome_screenshot_5.png)
+
 
 ## :compass:相关教程
 > 以下为原作者提供
