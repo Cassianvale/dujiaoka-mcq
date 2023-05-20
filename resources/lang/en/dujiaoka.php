@@ -49,6 +49,7 @@ return [
     'search_now' => 'Search Now',
 
     'home_page' => 'Home',
+    'article_page' => 'Related Articles',
     'group_all' => 'All',
     'order_search' => 'Order Search',
     'site_announcement' => 'Announcement',
@@ -64,6 +65,7 @@ return [
     'or_the_above' => 'Or Above',
     'each' => 'Each',
     'email' => 'Email',
+    'shipping_email' => 'Receiving Mailbox',
     'payment_method' => 'Payment Method',
     'payment_fee' => 'Payment Gateway Fee',
     'search_password' => 'Order Search Password',
@@ -71,6 +73,7 @@ return [
     'coupon_code' => 'Coupon Code',
     'copy_text' => 'Copy',
     'search_goods_name' => 'Goods Name...',
+    'preselection' => 'You can choose your own card code, and you need to add a fee',
 
     'behavior_verification' => 'Behavior Verification',
     'click_to_behavior_verification' => 'Click to complete the behavior verification here',
@@ -78,6 +81,7 @@ return [
     'fail_behavior_verification' => 'Behavior verification failed',
     'please_complete_the_behavior_verification_correctly' => 'Please complete the behavior verification correctly',
 
+    'confirm_order' => 'Confirm Order',
     'date_to_expired_order' => 'The order will expire in :min minutes if payment is not completed',
     'order_information' => 'Order Information',
     'pay_immediately' => 'Pay Immediately',
@@ -91,7 +95,8 @@ return [
     'pay_order_expiration_date_prompt' => 'Please scan the QR code in the App to pay! Valid for :min minutes',
     'money_symbol' => '￥',
     'purchase_limit' => 'Limit per Order',
-    
+
+
     'prompt' => [
         'server_illegal_request' => 'Illegal request!',
         'the_goods_is_not_on_the_shelves' => 'The product is not on the shelves!',
@@ -114,6 +119,7 @@ return [
         'order_already_paid' => 'The order has already been paid, please do not pay again',
         'order_status_completed' => 'The order has been processed',
         'order_inconsistent_amounts' => 'Inconsistent order amount',
+        'order_ip_limits' => 'You have too many orders to pay, please pay first; or take a break.',
         'order_carmis_insufficient_quantity_available' => 'Insufficient available card quantity, please contact the administrator to verify',
         'pay_gateway_does_not_exist' => 'Payment gateway does not exist',
         'pay_gateway_does_not_match' => 'Please use the same payment method as when placing the order',
@@ -125,8 +131,12 @@ return [
         'no_related_order_found_for_cache' => 'No related order cache found!',
         'no_related_order_found' => 'No related order found!',
         'new_order_push' => 'New order notification',
-        'loop_carmis_limit' => 'This product can only be purchased once!'
-        ],
+        'loop_carmis_limit' => 'This product can only be purchased once!',
+        'payment_limit' => 'This payment method is not supported for the selected product!',
+        'preselect_unable' => 'The preselected card has expired, please place a new order.',
+        'payment_only_once' => 'This payment method only allows a single payment page to be opened, please place a new order.'
+    ],
+
     'equipment' => [
         'please_use_a_browser_to_open' => 'Please use the built-in browser to open',
         'does_not_support_wechat_or_qq_access' => 'This site does not support access via WeChat or QQ',
@@ -144,6 +154,7 @@ return [
         'home' => 'Home',
         'bill' => 'Order Confirmation',
         'order-detail' => 'Order Details',
-        'order-search' => 'Order Search'
+        'order-search' => 'Order Search',
+        'article' => 'The Article',
     ]
 ];
