@@ -1,4 +1,4 @@
-![](https://files.mdnice.com/user/39773/dc2143d7-422a-4fe3-8bcb-692e8c6cbd9a.png)
+![](https://github.com/MuCqq/dujiaoka-mcq/blob/main/public/assets/common/images/chrome_screenshot_0.png)
 
 <p align="center">
 <img alt="GitHub" src="https://img.shields.io/github/license/outtimes/dujiaoka?style=for-the-badge">
@@ -85,18 +85,18 @@
 
 ## :open_mouth:快速预览
 【后端页面预览】
-![后端](public\assets\common\images\chrome_screenshot_1.png)
-![路由](public\assets\common\images\chrome_screenshot_2.png)
+![后端](https://github.com/MuCqq/dujiaoka-mcq/blob/main/public/assets/common/images/chrome_screenshot_1.png)
+![路由](https://github.com/MuCqq/dujiaoka-mcq/blob/main/public/assets/common/images/chrome_screenshot_2.png)
 
 【`luna`模板】 
-![luna](public\assets\common\images\chrome_screenshot_3.png)
-![luna](public\assets\common\images\chrome_screenshot_4.png)
+![luna](https://github.com/MuCqq/dujiaoka-mcq/blob/main/public/assets/common/images/chrome_screenshot_3.png)
+![luna](https://github.com/MuCqq/dujiaoka-mcq/blob/main/public/assets/common/images/chrome_screenshot_4.png)
 
 【`hyper`模板】  
-![hyper](https://github.com/MuCqq/dujiaoka-mcq/blob/main/public/assets/common/images/chrome_screenshot-luna.png)
+![hyper](https://github.com/MuCqq/dujiaoka-mcq/blob/main/public/assets/common/images/chrome_screenshot-hyper.png)
 
 【官方`Unicorn`模板首页】
-![unicorn](public\assets\common\images\chrome_screenshot_5.png)
+![unicorn](https://github.com/MuCqq/dujiaoka-mcq/blob/main/public/assets/common/images/chrome_screenshot_5.png)
 
 
 ## :compass:相关教程
