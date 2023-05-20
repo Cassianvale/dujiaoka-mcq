@@ -7,9 +7,13 @@
 <img alt="Telegram" src="https://img.shields.io/static/v1?label=Telegram&logo=Telegram&message=@dujiaoka&style=for-the-badge&color=blue&&link=https://t.me/dujiaoka">
 </p>
 
-# :warning:使用前警告
-# 这是*正在开发*，未经*充分测试*的版本，请*不要*用于*生产环境*
 # 仅供尝鲜试用，必须全新安装
+
+## 演示站点
+
+前台 https://47.100.160.133/
+后台 https://47.100.160.133/admin
+账号:demo 密码:123456
 
 ## :bulb:版本介绍
 这是一份基于[独角数卡](https://github.com/assimon/dujiaoka)在[dc53741](https://github.com/assimon/dujiaoka/commit/dc53741e275007b8c81c43319ee657ef011bad93)基础上修改的版本。此版本在部分功能上与原版有所修改，故请以本仓库的Wiki/Issues得到的反馈为准。
@@ -34,9 +38,8 @@
 - 优化权限显示，修复权限路由
 - 默认为luna模板
 
-
 ## 环境要求
-
+*星号为必须
 - *(PHP + PHPCLI) version = 8.0.2
 - Nginx >= 1.16
 - MYSQL >= 5.6
@@ -79,6 +82,7 @@
 - 本程序有一定的上手安装难度，请具备Linux服务器相关的基础知识，跟随Wiki一步一步安装基本不会出现问题。
 - 本程序不支持虚拟主机，未在Windows服务器上进行测试，请直接使用Linux服务器完成搭建。
 - 本程序*仅支持*PHP8.0.2及以上。
+- 支付宝当面付由于yansongda/pay v2升级到 v3.2，暂时未修复
 
 ## :speech_balloon:使用交流
 - 原作者的[Telegram群组](https://t.me/dujiaoka)
@@ -101,6 +105,11 @@
 
 
 ## :compass:相关教程
+
+> 安装教程
+- [本项目部署](https://github.com/MuCqq/dujiaoka-mcq/wikis/linux/install)
+- [自定义后台粉色](https://github.com/MuCqq/dujiaoka-mcq/wikis/customstyle)
+
 > 以下为原作者提供
 - [Linux环境安装](https://github.com/assimon/dujiaoka/wiki/linux_install)
 - [2.x版本宝塔安装教程](https://github.com/assimon/dujiaoka/wiki/2.x_bt_install)
@@ -111,7 +120,7 @@
 - [视频教程及工具集合](https://pan.dujiaoka.com)
 
 ## :bank:支持的支付接口
-- [✔] 支付宝当面付、PC网站、手机网站
+- [X] 支付宝当面付、PC网站、手机网站
 - [✔] 微信Native、H5、小程序
 - [✔] Payjs
 - [✔] 码支付(QQ/支付宝/微信)
