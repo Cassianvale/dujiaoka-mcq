@@ -62,7 +62,8 @@ class EmailTest extends Form
 	  }
       return $this
 				->response()
-				->success(admin_trans('email-test.labels.success'));
+				->success(admin_trans('email-test.labels.success'))
+                ->location();
     }
 
     /**
