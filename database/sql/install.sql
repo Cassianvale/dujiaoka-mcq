@@ -3,6 +3,7 @@ SET FOREIGN_KEY_CHECKS = 0;
 
 -- ----------------------------
 -- Table structure for admin_menu
+-- 菜单
 -- ----------------------------
 DROP TABLE IF EXISTS `admin_menu`;
 CREATE TABLE `admin_menu` (
@@ -49,11 +50,13 @@ INSERT INTO `admin_menu` VALUES (null, 19, 9, 'Order', 'fa-apple', '/order', '',
 INSERT INTO `admin_menu` VALUES (null, 16, 20, 'System_Setting', 'fa-cogs', '/system-setting', '', 1, now(), NULL);
 INSERT INTO `admin_menu` VALUES (null, 16, 23, 'Email_Test', 'fa-send', '/email-test', '', 1, now(), NULL);
 INSERT INTO `admin_menu` VALUES (null, 0, 18, 'Article_Manage', 'fa-pencil', '/article', '', 1, now(), NULL);
+INSERT INTO `admin_menu` VALUES (null, 0, 24, 'Dcat Plus', 'feather icon-settings', 'dcat-plus/site', 'celaraze.dcat-extension-plus', 1, now(), NULL);
 
 COMMIT;
 
 -- ----------------------------
 -- Table structure for admin_permission_menu
+-- 路由匹配菜单
 -- ----------------------------
 DROP TABLE IF EXISTS `admin_permission_menu`;
 CREATE TABLE `admin_permission_menu` (
@@ -99,11 +102,13 @@ INSERT INTO `admin_permission_menu` VALUES (20, 22, now(), NULL);
 INSERT INTO `admin_permission_menu` VALUES (21, 21, now(), NULL);
 INSERT INTO `admin_permission_menu` VALUES (22, 23, now(), NULL);
 INSERT INTO `admin_permission_menu` VALUES (23, 1, now(), NULL);
+INSERT INTO `admin_permission_menu` VALUES (24, 36, now(), NULL);
 
 COMMIT;
 
 -- ----------------------------
 -- Table structure for admin_permissions
+-- 权限路由
 -- ----------------------------
 DROP TABLE IF EXISTS `admin_permissions`;
 CREATE TABLE `admin_permissions` (
@@ -147,11 +152,12 @@ INSERT INTO `admin_permissions` VALUES (20, '邮件测试', 'Email_Test', '', '/
 INSERT INTO `admin_permissions` VALUES (21, '系统设置', 'System_Setting', '', '/system-setting*', 20, 18, now(), NULL);
 INSERT INTO `admin_permissions` VALUES (22, '文章管理', 'Article_Manage', '', '/article*', 18, 0, now(), NULL);
 INSERT INTO `admin_permissions` VALUES (23, '主页', 'Index', '', '', 1, 0, now(), NULL);
-
+INSERT INTO `admin_permissions` VALUES (24, '增强配置', 'Dcat Plus', '', '/dcat-plus/site*', 24, 0, now(), NULL);
 COMMIT;
 
 -- ----------------------------
--- Table structure for admin_role_menu
+-- Table structure for admin_role_menu 
+-- 角色菜单权限
 -- ----------------------------
 DROP TABLE IF EXISTS `admin_role_menu`;
 CREATE TABLE `admin_role_menu` (
@@ -169,7 +175,8 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for admin_role_permissions
+-- Table structure for admin_role_permissions 
+-- 角色权限 默认配置demo账号
 -- ----------------------------
 DROP TABLE IF EXISTS `admin_role_permissions`;
 CREATE TABLE `admin_role_permissions` (
@@ -196,6 +203,7 @@ INSERT INTO `admin_role_permissions` VALUES (2, 20, now(), NULL);
 INSERT INTO `admin_role_permissions` VALUES (2, 21, now(), NULL);
 INSERT INTO `admin_role_permissions` VALUES (2, 22, now(), NULL);
 INSERT INTO `admin_role_permissions` VALUES (2, 23, now(), NULL);
+INSERT INTO `admin_role_permissions` VALUES (2, 24, now(), NULL);
 
 COMMIT;
 
