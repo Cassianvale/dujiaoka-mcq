@@ -93,7 +93,7 @@
 ![luna](public\assets\common\images\chrome_screenshot_4.png)
 
 【`hyper`模板】  
-![hyper](public\assets\common\images\chrome_screenshot-luna.png)
+![hyper](https://github.com/MuCqq/dujiaoka-mcq/blob/main/public/assets/common/images/chrome_screenshot-luna.png)
 
 【官方`Unicorn`模板首页】
 ![unicorn](public\assets\common\images\chrome_screenshot_5.png)
