@@ -107,8 +107,8 @@
 ## :compass:相关教程
 
 > 安装教程
-- [本项目部署](https://github.com/MuCqq/dujiaoka-mcq/wikis/linux/install)
-- [自定义后台粉色](https://github.com/MuCqq/dujiaoka-mcq/wikis/customstyle)
+- [本项目部署](https://github.com/MuCqq/dujiaoka-mcq/wiki/install)
+- [自定义后台粉色](https://github.com/MuCqq/dujiaoka-mcq/wiki/自定义后台颜色)
 
 > 以下为原作者提供
 - [Linux环境安装](https://github.com/assimon/dujiaoka/wiki/linux_install)
