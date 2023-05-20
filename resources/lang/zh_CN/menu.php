@@ -24,10 +24,10 @@ return [
         'article_manage' => '文章管理',
         'configuration'  => '配置',
         'email_template_configuration' => '邮件模板配置',
+        'email_test' => '邮件测试',
         'pay_configuration'  => '支付通道',
+        'system_setting' => '系统设置',
         'order_manage' => '销售数据',
         'order'        => '订单列表',
-        'system_setting' => '系统设置',
-        'email_test' => '邮件测试'
     ],
 ];
