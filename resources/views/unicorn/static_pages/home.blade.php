@@ -111,7 +111,7 @@
                                                     <h6 class="mt-2"><small class="text-muted">{{__('goods.fields.in_stock')}}：{{ $goods['in_stock'] }}</small></h6>
                                                     <a href="{{ url("/buy/{$goods['id']}") }}" class="btn btn-primary fr @if($goods['in_stock'] === 0) disabled @endif">
                                                         <i class="ali-icon">&#xe7d8;</i>
-                                                        {{ __('dujiaoka.sell_price') }}
+                                                        {{ __('dujiaoka.order_now') }}
                                                     </a>
                                                 </div>
                                             </div>
