@@ -1,0 +1,67 @@
+{
+    "name": "outtimes/dujiaoka",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^8.0.2",
+        "amrshawky/laravel-currency": "^6.0",
+        "dcat/easy-excel": "^1.1.0",
+        "dcat/laravel-admin": "2.*",
+        "fideloper/proxy": "^4.4",
+        "geoip2/geoip2": "^2.13",
+        "jenssegers/agent": "^2.6",
+        "laravel/framework": "^9.0",
+        "laravel/tinker": "^2.8",
+        "mews/captcha": "^3.0",
+        "paypal/rest-api-sdk-php": "^1.14",
+        "simplesoftwareio/simple-qrcode": "2.0.0",
+        "stripe/stripe-php": "^7.84",
+        "xhat/payjs-laravel": "^1.6",
+        "yansongda/pay": "^3.2"
+    },
+    "require-dev": {
+        "spatie/laravel-ignition": "^1.0",
+        "fakerphp/faker": "^1.9.1",
+        "mockery/mockery": "^1.0",
+        "nunomaduro/collision": "^6.1",
+        "phpunit/phpunit": "^8.5.8|^9.3.3"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "platform-check": false
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ],
+        "files":[
+            "app/Helpers/functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        
+    }
+}
