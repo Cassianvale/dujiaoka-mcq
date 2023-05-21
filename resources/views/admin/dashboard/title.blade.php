@@ -31,19 +31,20 @@
         Dcat.darkMode.display(colorSwitch.matches);
     });
 </script>
+<body>
+    <div class="dashboard-title card bg-primary">
+        <div class="card-body">
+            <div class="text-center ">
+                <img class="avatar mt-1" src="/assets/common/images/logo.png">
 
-<div class="dashboard-title card bg-primary">
-    <div class="card-body">
-        <div class="text-center ">
-            <img class="avatar mt-1" src="/assets/common/images/logo.png">
-
-            <div class="text-center mb-1">
-                <h1 class="mb-3 mt-2 text-white">独角数卡 {{ config('dujiaoka.dujiaoka_version', '2.2.0') }}</h1>
-                <div class="links">
-                    <a href="https://github.com/outtimes/dujiaoka" target="_blank">Github</a>
-                    <a href="http://t.me/dujiaoka" id="telegram-group-link" target="_blank">{{ __('dujiaoka.join_telegram_group') }}</a>
+                <div class="text-center mb-1">
+                    <h1 class="mb-3 mt-2 text-white">独角数卡 {{ config('dujiaoka.dujiaoka_version', '2.2.0') }}</h1>
+                    <div class="links">
+                        <a href="https://github.com/outtimes/dujiaoka" target="_blank">Github</a>
+                        <a href="http://t.me/dujiaoka" id="telegram-group-link" target="_blank">{{ __('dujiaoka.join_telegram_group') }}</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</body>
