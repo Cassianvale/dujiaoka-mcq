@@ -24,3 +24,8 @@ use Dcat\Admin\Show;
  * Admin::js('/packages/prettydocs/js/main.js');
  *
  */
+Dcat\Admin\Color::extend('mypink', [
+    'primary'        => '#ff99ce',
+    'primary-darker' => '#ff99ce',
+    'link'           => '#ff99ce',
+]);
