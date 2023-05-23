@@ -33,10 +33,10 @@ class GoodsController extends AdminController
             $grid->column('id')->sortable();
             $grid->column('picture')->image('', 100, 100);
             $grid->column('gd_name')->editable();
-            // $grid->column('group.gp_name', admin_trans('goods.fields.group_id'));
-            $grid->column('group.gp_name', admin_trans('goods.fields.group_id'))->select(
-                GoodsGroupModel::query()
-                ->pluck('gp_name', 'id'));
+            $grid->column('group.gp_name', admin_trans('goods.fields.group_id'));
+            // $grid->column('group.gp_name', admin_trans('goods.fields.group_id'))->select(
+            //     GoodsGroupModel::query()
+            //     ->pluck('gp_name', 'id'));
 
             $grid->column('type')
                 ->using(GoodsModel::getGoodsTypeMap())

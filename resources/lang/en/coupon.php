@@ -2,24 +2,25 @@
 
 return [
     'labels' => [
-        'Coupon' => '优惠码',
-        'coupon' => '优惠码',
+        'Coupon' => 'Discount code',
+        'coupon' => 'Discount code',
     ],
     'fields' => [
-        'type' => '优惠类型',
-        'discount' => '优惠金额/系数',
-        'is_open' => '是否启用',
-        'coupon' => '优惠码',
-        'ret' => '剩余使用次数',
-        'type_one_time' => '一次性使用',
-        'type_repeat' => '重复使用',
-        'type_percent' => '系数折扣 (0-1)',
-        'type_fixed' => '整体固定金额',
-        'type_each' => '每件固定金额',
-        'goods_id' => '可用商品'
+        'type' => 'Discount type',
+        'discount' => 'Discount amount/coefficient',
+        'is_open' => 'Is enabled',
+        'coupon' => 'Discount code',
+        'ret' => 'Remaining usage times',
+        'type_one_time' => 'One-time use',
+        'type_repeat' => 'Reusable',
+        'type_percent' => 'Coefficient discount (0-1)',
+        'type_fixed' => 'Fixed overall amount',
+        'type_each' => 'Fixed amount per piece',
+        'goods_id' => 'Available product'
     ],
     'options' => [],
     'helps' => [
-        'discount' => '系数折扣：价格在下单时会乘以这个数字，0.9就是九折。固定金额：下单时价格会直接减去。'
+        'discount' => 'Coefficient discount: The price will be multiplied by this number when placing an order, 0.9 means a 10% discount. Fixed amount: The price will be directly reduced when placing an order.'
     ]
 ];
+
