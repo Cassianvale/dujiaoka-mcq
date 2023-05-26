@@ -61,9 +61,8 @@ class SuccessOrderCard extends Line
                 $endTime = Carbon::now()->endOfYear();
                 break;
             default:
-                $today = Carbon::today();
-                $startTime = $today->startOfDay();
-                $endTime = $today->endOfDay();
+                $startTime = Carbon::now()->startOfDay();
+                $endTime = Carbon::now()->endOfDay();
                 break;
         }
         // 分组查询
