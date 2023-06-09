@@ -205,11 +205,13 @@ input[type="number"] {
 }
 
 .main .cate .cate-box {
+    -webkit-box-shadow: 0 7px 29px 0 rgba(18, 52, 91, .11);
+    box-shadow: 0 7px 29px 0 rgba(18, 52, 91, .11);
     overflow: hidden;
     display: inline-block;
     vertical-align: middle;
     min-width: 130px;
-    background: #f1f1f1;
+    background: #ffffff;
     border-radius: 10px;
     height: 67px;
     padding: 0 20px;
