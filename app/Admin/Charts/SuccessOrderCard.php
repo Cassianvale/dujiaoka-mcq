@@ -32,7 +32,7 @@ class SuccessOrderCard extends Line
         $this->title(admin_trans('dujiaoka.status_completed_number'));
         $this->dropdown([
             'seven' => admin_trans('dujiaoka.this_seven_days'),
-            'default' => admin_trans('dujiaoka.this_today'),
+            'today' => admin_trans('dujiaoka.this_today'),
             'month' => admin_trans('dujiaoka.this_month'),
             'year' => admin_trans('dujiaoka.this_year'),
         ]);
@@ -54,15 +54,19 @@ class SuccessOrderCard extends Line
                 break;
             case 'month':
                 $startTime = Carbon::now()->startOfMonth();
-                $endTime = Carbon::now()->endOfWeek();
+                $endTime = Carbon::now()->endOfMonth();
                 break;
             case 'year':
                 $startTime = Carbon::now()->startOfYear();
                 $endTime = Carbon::now()->endOfYear();
                 break;
-            default:
+            case 'today':
                 $startTime = Carbon::now()->startOfDay();
                 $endTime = Carbon::now()->endOfDay();
+                break;
+            default:
+                $startTime = Carbon::now()->startOfWeek();
+                $endTime = Carbon::now()->endOfWeek();
                 break;
         }
         // 分组查询

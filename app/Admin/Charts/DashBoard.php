@@ -32,7 +32,7 @@ class DashBoard extends RadialBar
         $this->chartHeight(300);
         $this->chartLabels(admin_trans('dujiaoka.order_success_rate'));
         $this->dropdown([
-            'default' => admin_trans('dujiaoka.this_today'),
+            'today' => admin_trans('dujiaoka.this_today'),
             'seven' => admin_trans('dujiaoka.this_seven_days'),
             'month' => admin_trans('dujiaoka.this_month'),
             'year' => admin_trans('dujiaoka.this_year'),
@@ -55,11 +55,15 @@ class DashBoard extends RadialBar
                 break;
             case 'month':
                 $startTime = Carbon::now()->startOfMonth();
-                $endTime = Carbon::now()->endOfWeek();
+                $endTime = Carbon::now()->endOfMonth();
                 break;
             case 'year':
                 $startTime = Carbon::now()->startOfYear();
                 $endTime = Carbon::now()->endOfYear();
+                break;
+            case 'today':
+                $startTime = Carbon::now()->startOfDay();
+                $endTime = Carbon::now()->endOfDay();
                 break;
             default:
                 $startTime = Carbon::now()->startOfDay();
