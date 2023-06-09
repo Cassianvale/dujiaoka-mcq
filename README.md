@@ -11,10 +11,7 @@
 
 ## 演示站点
 
-前台 https://47.100.160.133/  
-后台 https://47.100.160.133/admin  
-账号:demo  
-密码:123456  
+前台演示 [点击前往](https://shop.aixpro.tech/)
 
 ## :bulb:版本介绍
 这是一份基于[独角数卡](https://github.com/assimon/dujiaoka)在[dc53741](https://github.com/assimon/dujiaoka/commit/dc53741e275007b8c81c43319ee657ef011bad93)基础上修改的版本。此版本在部分功能上与原版有所修改，故请以本仓库的Wiki/Issues得到的反馈为准。
