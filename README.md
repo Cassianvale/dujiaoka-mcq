@@ -13,6 +13,12 @@
 
 前台演示 [点击前往](https://shop.aixpro.tech/)
 
+## 安装教程
+- [2.x版本宝塔安装教程](https://github.com/assimon/dujiaoka/wiki/2.x_bt_install)
+- [本项目部署](https://github.com/MuCqq/dujiaoka-mcq/wiki/install)
+- [自定义后台颜色](https://github.com/MuCqq/dujiaoka-mcq/wiki/自定义后台颜色)
+- [Dcat-Admin 增强扩展包](https://github.com/MuCqq/dcat-extension-plus)
+
 ## :bulb:版本介绍
 这是一份基于[独角数卡](https://github.com/assimon/dujiaoka)在[dc53741](https://github.com/assimon/dujiaoka/commit/dc53741e275007b8c81c43319ee657ef011bad93)基础上修改的版本。此版本在部分功能上与原版有所修改，故请以本仓库的Wiki/Issues得到的反馈为准。
 
@@ -108,11 +114,6 @@
 ![Dcat Plus UI配置2](https://github.com/MuCqq/dujiaoka-mcq/blob/main/public/assets/common/images/chrome_screenshot_6.png)
 
 ## :compass:相关教程
-
-> 安装教程
-- [本项目部署](https://github.com/MuCqq/dujiaoka-mcq/wiki/install)
-- [自定义后台粉色](https://github.com/MuCqq/dujiaoka-mcq/wiki/自定义后台颜色)
-
 > 以下为原作者提供
 - [Linux环境安装](https://github.com/assimon/dujiaoka/wiki/linux_install)
 - [2.x版本宝塔安装教程](https://github.com/assimon/dujiaoka/wiki/2.x_bt_install)
