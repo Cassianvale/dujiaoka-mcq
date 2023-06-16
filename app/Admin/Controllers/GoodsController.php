@@ -68,7 +68,18 @@ class GoodsController extends AdminController
                 $filter->equal('coupon.coupons_id', admin_trans('goods.fields.coupon_id'))->select(
                     Coupon::query()->pluck('coupon', 'id')
                 );
+                $filter->equal('is_open')->select([
+                    GoodsGroupModel::STATUS_OPEN => admin_trans('dujiaoka.status_open'),
+                    GoodsGroupModel::STATUS_CLOSE => admin_trans('dujiaoka.status_close'),
+                ]);
+                $filter->whereBetween('created_at', function ($q) {
+                    $start = $this->input['start'] ?? null;
+                    $end = $this->input['end'] ?? null;
+                    $q->where('created_at', '>=', $start)
+                        ->where('created_at', '<=', $end);
+                })->datetime();
             });
+            
             $grid->actions(function (Grid\Displayers\Actions $actions) {
                 if (request('_scope_') == admin_trans('dujiaoka.trashed')) {
                     $actions->append(new Restore(GoodsModel::class));

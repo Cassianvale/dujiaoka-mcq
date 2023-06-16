@@ -32,6 +32,17 @@ class GoodsGroupController extends AdminController
             $grid->disableViewButton();
             $grid->filter(function (Grid\Filter $filter) {
                 $filter->equal('id');
+                $filter->equal('gp_name');
+                $filter->equal('is_open')->select([
+                    GoodsGroupModel::STATUS_OPEN => admin_trans('dujiaoka.status_open'),
+                    GoodsGroupModel::STATUS_CLOSE => admin_trans('dujiaoka.status_close'),
+                ]);
+                $filter->whereBetween('created_at', function ($q) {
+                    $start = $this->input['start'] ?? null;
+                    $end = $this->input['end'] ?? null;
+                    $q->where('created_at', '>=', $start)
+                        ->where('created_at', '<=', $end);
+                })->datetime();
                 $filter->scope(admin_trans('dujiaoka.trashed'))->onlyTrashed();
             });
             $grid->actions(function (Grid\Displayers\Actions $actions) {

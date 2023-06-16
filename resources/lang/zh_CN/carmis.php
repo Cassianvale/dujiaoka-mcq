@@ -7,7 +7,7 @@ return [
     ],
     'fields' => [
         'goods_id' => '所属商品',
-        'status' => '状态',
+        'status' => '售出状态',
         'carmi' => '卡密内容',
         'info' => '卡密说明',
         'info_preg' => '卡密说明正则/分隔符',
@@ -15,6 +15,7 @@ return [
         'status_sold' => '已售出',
         'is_loop' => '循环卡密',
 		'yes'=>'是',
+		'no'=>'否',
         'import_carmis' => '导入卡密',
         'carmis_list' => '卡密列表',
         'carmis_txt' => '卡密文本',
@@ -24,6 +25,7 @@ return [
     'options' => [
     ],
     'helps' => [
+        'carmi_contents' => '卡密模糊查询',
         'carmis_list' => '一行一个，回车分隔。请勿导入单个文本长度过大的卡密，容易导致内存溢出。如果卡密过大建议修改商品为人工处理',
         'carmis_info' => '若商品支持自选，卡密信息将会展示在购买页供顾客自行选择',
         'info_preg' => '支持正则表达式（优先判定）或用分隔符来筛选卡密。<br>正则表达式将会将符合条件的第一个字符串作为卡密信息。<br>分隔符将会使用最后一个字符串作为卡密信息，如<code>c1---c2---c3</code>，使用<code>---</code>作为分隔符，<code>c3</code>会作为卡密信息。',

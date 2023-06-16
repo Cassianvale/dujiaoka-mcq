@@ -41,6 +41,17 @@ class CarmisController extends AdminController
                     Goods::query()->where('type', Goods::AUTOMATIC_DELIVERY)->pluck('gd_name', 'id')
                 );
                 $filter->equal('status')->select(CarmisModel::getStatusMap());
+                $filter->like('carmi',admin_trans('carmis.helps.carmi_contents'));
+                $filter->equal('is_loop')->select([
+                    1 => admin_trans('carmis.fields.yes'),
+                    0 => admin_trans('carmis.fields.no'),
+                ]);
+                $filter->whereBetween('created_at', function ($q) {
+                    $start = $this->input['start'] ?? null;
+                    $end = $this->input['end'] ?? null;
+                    $q->where('created_at', '>=', $start)
+                        ->where('created_at', '<=', $end);
+                })->datetime();
                 $filter->scope(admin_trans('dujiaoka.trashed'))->onlyTrashed();
             });
             $grid->actions(function (Grid\Displayers\Actions $actions) {

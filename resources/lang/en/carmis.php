@@ -15,6 +15,7 @@ return [
         'status_sold' => 'Sold',
         'is_loop' => 'Loop Card Key',
         'yes' => 'Yes',
+        'no' => 'No',
         'import_carmis' => 'Import Card Keys',
         'carmis_list' => 'List of Card Keys',
         'carmis_txt' => 'Text of Card Keys',
