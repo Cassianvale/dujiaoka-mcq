@@ -5,7 +5,6 @@ public/vendor/dcat-admin-extensions
 /vendor
 /dcat-admin-extensions
 install.lock
-.env
 .user.ini
 .htaccess
 .DS_Store
