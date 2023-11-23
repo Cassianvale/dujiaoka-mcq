@@ -31,7 +31,7 @@ class CarmisController extends AdminController
             $grid->column('id')->sortable();
             $grid->column('goods.gd_name', admin_trans('carmis.fields.goods_id'));
             $grid->column('status')->select(CarmisModel::getStatusMap());
-            $grid->column('is_loop')->display(function($v){return $v==1?admin_trans('carmis.fields.yes'):"";})->switch();
+            $grid->column('is_loop')->switch();
             $grid->column('carmi')->limit(20);
             $grid->column('info')->limit(20);
             $grid->column('updated_at')->sortable();
@@ -82,12 +82,18 @@ class CarmisController extends AdminController
             $show->field('goods.gd_name', admin_trans('carmis.fields.goods_id'));
             $show->field('status')->as(function ($type) {
                 if ($type == CarmisModel::STATUS_UNSOLD) {  // 等于未售出则返回 "未售出"
-                    return admin_trans('carmis.fields.status_unsold'); 
+                    return admin_trans('carmis.fields.status_unsold');
                 } else {
                     return admin_trans('carmis.fields.status_sold'); // 已售出
                 }
             });
-			$show->field('is_loop')->as(function ($v) {return $v==1?admin_trans('carmis.fields.yes'):"";});
+            $show->field('is_loop')->as(function ($isOpen) {
+                if ($isOpen == CarmisModel::STATUS_OPEN) {
+                    return admin_trans('carmis.fields.yes');
+                } else {
+                    return admin_trans('carmis.fields.no');
+                }
+            });
             $show->field('carmi');
             $show->field('info');
             $show->field('created_at');

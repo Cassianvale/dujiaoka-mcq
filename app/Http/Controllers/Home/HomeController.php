@@ -70,6 +70,10 @@ class HomeController extends BaseController
     {
         try {
             $goods = $this->goodsService->detail($id);
+            # 商品删除后访问商品显示商品不存在
+            if (!$goods) {
+                return $this->err(__('dujiaoka.prompt.goods_does_not_exist'));
+            }
             $this->goodsService->validatorGoodsStatus($goods);
             // 有没有优惠码可以展示
             if (count($goods->coupon)) {
