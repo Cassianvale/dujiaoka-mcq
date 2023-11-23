@@ -8,3 +8,5 @@ install.lock
 .user.ini
 .htaccess
 .DS_Store
+.env
+.vscode
