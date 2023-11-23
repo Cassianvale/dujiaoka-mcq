@@ -93,7 +93,7 @@ body {
 }
 
 .logo {
-	filter: brightness(0);
+	filter: brightness(1);
 }
 
 .header-top-right-btns {
@@ -283,7 +283,7 @@ body {
 }
 
 .carmis {
-  display: grid;   
+  display: grid;
 }
 
 .carmis label {
